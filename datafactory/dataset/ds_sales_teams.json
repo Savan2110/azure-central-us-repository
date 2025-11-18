@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "azure-central-us-repository/refs/heads/main/sales_teams.csv?token=GHSAT0AAAAAADPK7B7JMXCXS6BKBQCZYSHW2I4T7KA"
+				"relativeUrl": "Savan2110/azure-central-us-repository/refs/heads/main/sales_teams.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

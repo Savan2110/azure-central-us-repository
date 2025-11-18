@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "azure-central-us-repository/refs/heads/main/accounts.csv?token=GHSAT0AAAAAADPK7B7I4KHPIB5XJA2Y4X4S2I4RNSQ"
+				"relativeUrl": "accounts.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "azure-central-us-repository/refs/heads/main/data_dictionary.csv?token=GHSAT0AAAAAADPK7B7JC4QUDZV73RSYNHT62I4T2CQ"
+				"relativeUrl": "Savan2110/azure-central-us-repository/refs/heads/main/data_dictionary.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
