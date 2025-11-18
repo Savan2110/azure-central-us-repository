@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-1511project"
+		},
+		"sink_adls_accountKey": {
+			"value": ""
+		},
+		"ls_accounts_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Savan2110/"
+		},
+		"ls_data_dictionary_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Savan2110/"
+		},
+		"ls_products_properties_typeProperties_url": {
+			"value": "https://github.com/Savan2110/"
+		},
+		"ls_sales_pipeline_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Savan2110/"
+		},
+		"ls_sales_teams_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Savan2110/"
+		},
+		"sink_adls_properties_typeProperties_url": {
+			"value": "https://datacenter1511.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
