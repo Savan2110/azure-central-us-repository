@@ -1,0 +1,22 @@
+{
+	"name": "ds_data_dictionary",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_data_dictionary",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "azure-central-us-repository/refs/heads/main/data_dictionary.csv?token=GHSAT0AAAAAADPK7B7JC4QUDZV73RSYNHT62I4T2CQ"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

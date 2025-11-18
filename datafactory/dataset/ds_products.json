@@ -1,0 +1,22 @@
+{
+	"name": "ds_products",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_products",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "azure-central-us-repository/blob/main/products.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

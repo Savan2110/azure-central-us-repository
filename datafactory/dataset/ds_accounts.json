@@ -1,0 +1,22 @@
+{
+	"name": "ds_accounts",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_accounts",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "azure-central-us-repository/refs/heads/main/accounts.csv?token=GHSAT0AAAAAADPK7B7I4KHPIB5XJA2Y4X4S2I4RNSQ"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

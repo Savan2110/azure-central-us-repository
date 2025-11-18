@@ -1,0 +1,22 @@
+{
+	"name": "sales_pipeline",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sales_pipeline",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "azure-central-us-repository/refs/heads/main/sales_pipeline.csv?token=GHSAT0AAAAAADPK7B7ISCQGZQMCIGUIG2MG2I4T5AQ"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
