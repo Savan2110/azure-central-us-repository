@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/data_dictionary.csv?token=GHSAT0AAAAAADPK7B7I7ZLEQWLVAMSWKJB22I4VEIA",
+			"url": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/products.csv?token=GHSAT0AAAAAADPK7B7JM5BW2UJNJFSSVL5K2I4UQ5Q",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
