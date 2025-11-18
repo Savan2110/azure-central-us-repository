@@ -13,23 +13,23 @@
 		},
 		"ls_accounts_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/Savan2110/"
+			"defaultValue": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/main/"
 		},
 		"ls_data_dictionary_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/Savan2110/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"ls_products_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://github.com/Savan2110/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"ls_sales_pipeline_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/Savan2110/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"ls_sales_teams_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/Savan2110/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"sink_adls_properties_typeProperties_url": {
 			"type": "string",
@@ -156,7 +156,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "azure-central-us-repository/refs/heads/main/accounts.csv?token=GHSAT0AAAAAADPK7B7I4KHPIB5XJA2Y4X4S2I4RNSQ"
+						"relativeUrl": "accounts.csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -183,7 +183,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "azure-central-us-repository/refs/heads/main/data_dictionary.csv?token=GHSAT0AAAAAADPK7B7JC4QUDZV73RSYNHT62I4T2CQ"
+						"relativeUrl": "Savan2110/azure-central-us-repository/refs/heads/main/data_dictionary.csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -210,7 +210,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "azure-central-us-repository/blob/main/products.csv"
+						"relativeUrl": "Savan2110/azure-central-us-repository/refs/heads/main/products.csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -237,7 +237,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "azure-central-us-repository/refs/heads/main/sales_teams.csv?token=GHSAT0AAAAAADPK7B7JMXCXS6BKBQCZYSHW2I4T7KA"
+						"relativeUrl": "Savan2110/azure-central-us-repository/refs/heads/main/sales_teams.csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -399,7 +399,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "azure-central-us-repository/refs/heads/main/sales_pipeline.csv?token=GHSAT0AAAAAADPK7B7ISCQGZQMCIGUIG2MG2I4T5AQ"
+						"relativeUrl": "Savan2110/azure-central-us-repository/refs/heads/main/sales_pipeline.csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -480,7 +480,14 @@
 					{
 						"name": "data_dictionary",
 						"type": "Copy",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "accounts",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"policy": {
 							"timeout": "0.12:00:00",
 							"retry": 0,
@@ -539,7 +546,14 @@
 					{
 						"name": "products",
 						"type": "Copy",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "data_dictionary",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"policy": {
 							"timeout": "0.12:00:00",
 							"retry": 0,
@@ -598,7 +612,14 @@
 					{
 						"name": "sales_pipeline",
 						"type": "Copy",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "products",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"policy": {
 							"timeout": "0.12:00:00",
 							"retry": 0,
@@ -657,7 +678,14 @@
 					{
 						"name": "sales_teams",
 						"type": "Copy",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "sales_pipeline",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"policy": {
 							"timeout": "0.12:00:00",
 							"retry": 0,

@@ -13,23 +13,23 @@
 		},
 		"ls_accounts_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/Savan2110/"
+			"defaultValue": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/main/"
 		},
 		"ls_data_dictionary_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/Savan2110/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"ls_products_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://github.com/Savan2110/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"ls_sales_pipeline_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/Savan2110/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"ls_sales_teams_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/Savan2110/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"sink_adls_properties_typeProperties_url": {
 			"type": "string",
