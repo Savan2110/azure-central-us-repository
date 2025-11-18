@@ -13,23 +13,23 @@
 		},
 		"ls_accounts_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/main/"
+			"defaultValue": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/accounts.csv?token=GHSAT0AAAAAADPK7B7IJEKP26GSARAYIGDO2I4VAUA"
 		},
 		"ls_data_dictionary_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/"
+			"defaultValue": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/data_dictionary.csv?token=GHSAT0AAAAAADPK7B7I7ZLEQWLVAMSWKJB22I4VEIA"
 		},
 		"ls_products_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/"
+			"defaultValue": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/products.csv?token=GHSAT0AAAAAADPK7B7JM5BW2UJNJFSSVL5K2I4UQ5Q"
 		},
 		"ls_sales_pipeline_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/"
+			"defaultValue": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/sales_pipeline.csv?token=GHSAT0AAAAAADPK7B7JZOPIODSCAF7UKBAO2I4VFUA"
 		},
 		"ls_sales_teams_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/"
+			"defaultValue": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/sales_teams.csv?token=GHSAT0AAAAAADPK7B7IQ7VMMP2MVJ5LZ33G2I4VGKA"
 		},
 		"sink_adls_properties_typeProperties_url": {
 			"type": "string",
@@ -401,8 +401,7 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "HttpServerLocation",
-						"relativeUrl": "accounts.csv"
+						"type": "HttpServerLocation"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -428,8 +427,7 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "HttpServerLocation",
-						"relativeUrl": "Savan2110/azure-central-us-repository/refs/heads/main/data_dictionary.csv"
+						"type": "HttpServerLocation"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -455,8 +453,7 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "HttpServerLocation",
-						"relativeUrl": "Savan2110/azure-central-us-repository/refs/heads/main/products.csv"
+						"type": "HttpServerLocation"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -482,8 +479,7 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "HttpServerLocation",
-						"relativeUrl": "Savan2110/azure-central-us-repository/refs/heads/main/sales_teams.csv"
+						"type": "HttpServerLocation"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -644,8 +640,7 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "HttpServerLocation",
-						"relativeUrl": "Savan2110/azure-central-us-repository/refs/heads/main/sales_pipeline.csv"
+						"type": "HttpServerLocation"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",

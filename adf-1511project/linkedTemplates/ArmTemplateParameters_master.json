@@ -9,19 +9,19 @@
 			"value": ""
 		},
 		"ls_accounts_properties_typeProperties_url": {
-			"value": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/main/"
+			"value": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/accounts.csv?token=GHSAT0AAAAAADPK7B7IJEKP26GSARAYIGDO2I4VAUA"
 		},
 		"ls_data_dictionary_properties_typeProperties_url": {
-			"value": "https://raw.githubusercontent.com/"
+			"value": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/data_dictionary.csv?token=GHSAT0AAAAAADPK7B7I7ZLEQWLVAMSWKJB22I4VEIA"
 		},
 		"ls_products_properties_typeProperties_url": {
-			"value": "https://raw.githubusercontent.com/"
+			"value": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/products.csv?token=GHSAT0AAAAAADPK7B7JM5BW2UJNJFSSVL5K2I4UQ5Q"
 		},
 		"ls_sales_pipeline_properties_typeProperties_url": {
-			"value": "https://raw.githubusercontent.com/"
+			"value": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/sales_pipeline.csv?token=GHSAT0AAAAAADPK7B7JZOPIODSCAF7UKBAO2I4VFUA"
 		},
 		"ls_sales_teams_properties_typeProperties_url": {
-			"value": "https://raw.githubusercontent.com/"
+			"value": "https://raw.githubusercontent.com/Savan2110/azure-central-us-repository/refs/heads/main/sales_teams.csv?token=GHSAT0AAAAAADPK7B7IQ7VMMP2MVJ5LZ33G2I4VGKA"
 		},
 		"sink_adls_properties_typeProperties_url": {
 			"value": "https://datacenter1511.dfs.core.windows.net/"
